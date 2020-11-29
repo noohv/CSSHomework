@@ -3,16 +3,20 @@ name: Valters Hūns
 student ID number: vh20006
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
     font-size: 14px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Roboto','Arial', sans-serif;
     width: 100%;
     min-width: 1500px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ------------------HEADER--------------------- */
@@ -39,15 +43,18 @@ nav {
 
 #top-menu a {
     color: white;
-    text-decoration: none;
 }
 
 #top-menu a:hover {
     color: rgb(242, 177, 26);
 }
 
+#top-menu .right a:hover {
+    color: rgb(255,255,255);
+}
+
 .parent-menu li {
-    padding: 15px;
+    padding: 30px 20px;
 }
 
 .parent-menu{
@@ -56,15 +63,11 @@ nav {
     padding: 0;
 }
 
-.sub-menu-caption {
-    position: relative;
-    display: inline-block;
-}
 
 .upper-menu {
     float: left;
 }
-    /* Sub menu */
+    /* ---------------SUBMENU--------------------- */
 
 .sub-menu-caption {
     position: relative;
@@ -75,18 +78,23 @@ nav {
     display: none;
     position: absolute;
     min-width: 160px;
-    top: 49px;
-    left: 0;
+    top: 60px;
+    left: 15px;
     background-color: rgba(14, 2, 35, 0.8);
     z-index: 1;
+    font-size: 0.9rem;
+}
+
+.sub-menu li {
+    padding: 15px;
 }
 
 .sub-menu-caption:hover .sub-menu{
     display: block;
 }
-    /* Sub menu beigas */
+    /* ------------SUBMENU BEIGAS------------------ */
 
-   /*-----------------COMPONENTI------------------ */
+   /*-----------------VAIRAK IZMANTOJAMI------------------ */
 
 .active {
     color: rgb(242, 177, 26)   
@@ -119,10 +127,10 @@ nav {
 }
 
 .btn-l {
+    border: 2px solid;
     text-transform: uppercase;
-    border-style: 2px;
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 15px 30px;
     color: rgb(255,255,255);
 }
 
@@ -152,22 +160,40 @@ nav {
     display: inline;
 }
 
-
-
 .btn:hover {
-    background-color: rgba(242, 177, 26);
-    color: white;
+    background-color: rgb(242, 213, 26);
 }
 
 .social {
-    padding-top: 100px;
-    padding-right: 20px;
+    position: relative;
+    top: 85px;
+    right: 20px;
     text-align: right;
 }
 
+.social h5 {
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    color: rgba(255,255,255,0.8);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-btns {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+}
+
 .social-btns a img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    opacity: 60%;
+}
+
+.social-btns a img:hover {
+    opacity: 100%;
 }
 
 .title h1 {
@@ -176,7 +202,7 @@ nav {
     bottom: 90px;
     right: 16px;
     color: white;
-    font-size: 32px;
+    font-size: 72px;
     z-index: 2;
 }
 
@@ -185,7 +211,6 @@ nav {
     bottom: 10px;
     right: 16px;
     color: white;
-    font-size: 0.8rem;
 }
 
 .meta li {
@@ -193,18 +218,20 @@ nav {
     border: 1px solid;
     border-radius: 32px;
     padding-right: 10px;
+    margin-right: 20px;
+    font-size: 0.8rem;
 }
 
 .meta span {
     display: inline-block;
     border-radius: 32px;
-    width: 50px;
+    width: 40px;
     border: 1px solid;
-    border-color: orange;
+    border-color: rgba(242, 177, 26, 0.8);
     border-left: none;
     text-align: center;
-    background-color: orange;
-    padding: 20px 2px;
+    background-color: rgba( 242, 213, 26, 0.8);
+    padding: 15px 2px;
     margin-right: 10px;
     text-transform: uppercase;
 }
@@ -251,14 +278,15 @@ nav {
 .section-cast h4 {
     padding-top: 10px;
     color:white;
+    font-size: 24px;
+    font-weight: bold;
 }
-
 
 .section-cast ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 80px;
+    padding: 200px 80px;
 }
 
 .section-cast img {
@@ -291,12 +319,15 @@ nav {
     height: 17%;
     background-color: rgba(255,255,255, 0.8);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .cast-text h5 {
     font-size: 18px;
+    font-weight: bold;
     color: rgba(42,42,42,1);
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .cast-text p {
@@ -306,6 +337,10 @@ nav {
 
 .section-cast li:hover .cast-text, .section-cast li:hover .cast-head {
     background-color: rgba( 242, 213, 26, 1);
+}
+
+.section-cast li:hover h5 {
+    color: rgb(255,255,255);
 }
 
     /* -------------CAST & CREW BEIGAS---------------- */
@@ -368,15 +403,40 @@ nav {
     color: white;
     font-weight: bold;
     font-size:24px;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 50px 0;
+}    
+    
+    /* -------------TICKET BEIGAS---------------- */
+    
+
+    /* ----------------FOOTER------------------- */
+
+.section-footer {
+    text-align: center;
 }
 
-.section-tickets a {
-    text-decoration: none;
+.ul-footer li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px 0;
 }
 
-    
-    
-        /* -------------TRAILER BEIGAS---------------- */
-    
+.ul-footer a {
+    color: rgb(136,136,136);
+    border-right: solid 1px rgb(181,181,181);
+    padding-right: 7px;
+    padding-left: 5px;
+    font-variant: small-caps;
+}
 
+.ul-footer a:hover {
+    text-decoration: underline;
+    color: rgb(14,2,35);
+}
+
+.ul-footer li:last-child a {
+    border: none;
+}
+    
+    /* -------------FOOTER BEIGAS---------------- */
+    
