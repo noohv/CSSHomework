@@ -1,0 +1,382 @@
+/*Info about the author 
+name: Valters Hūns
+student ID number: vh20006
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    min-width: 1500px;
+}
+
+/* ------------------HEADER--------------------- */
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/topimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: rgba(14, 2, 35, 0.8);
+    width: 100%;
+    position: fixed;
+    font-size: 1.2rem;
+    z-index: 7;
+}
+
+
+#top-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#top-menu a:hover {
+    color: rgb(242, 177, 26);
+}
+
+.parent-menu li {
+    padding: 15px;
+}
+
+.parent-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.upper-menu {
+    float: left;
+}
+    /* Sub menu */
+
+.sub-menu-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 49px;
+    left: 0;
+    background-color: rgba(14, 2, 35, 0.8);
+    z-index: 1;
+}
+
+.sub-menu-caption:hover .sub-menu{
+    display: block;
+}
+    /* Sub menu beigas */
+
+   /*-----------------COMPONENTI------------------ */
+
+.active {
+    color: rgb(242, 177, 26)   
+}
+
+.right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.bg-overlay {
+    background-color: rgb(14, 2, 35, 0.5);
+    width: 100%;
+    height:100vh;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 32px;
+    background-color: rgba( 242, 213, 26, 0.8);
+    text-transform: capitalize;
+    padding: 5px 15px;
+}
+
+.btn-l {
+    text-transform: uppercase;
+    border-style: 2px;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: rgb(255,255,255);
+}
+
+.line {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    padding-top: 70px;
+    border-bottom: 2px solid rgb(255,255,255);
+}
+
+    /* -----------------BEIGAS----------------- */
+
+.icon {
+    display: inline;
+}
+
+.collapse {
+    display: none;
+}
+
+.sub-menu-caption:hover .expand {
+    display: none;
+}
+
+.sub-menu-caption:hover .collapse {
+    display: inline;
+}
+
+
+
+.btn:hover {
+    background-color: rgba(242, 177, 26);
+    color: white;
+}
+
+.social {
+    padding-top: 100px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.social-btns a img {
+    width: 20px;
+    height: 20px;
+}
+
+.title h1 {
+    z-index: 100;
+    position: absolute;
+    bottom: 90px;
+    right: 16px;
+    color: white;
+    font-size: 32px;
+    z-index: 2;
+}
+
+.meta {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.meta li {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 32px;
+    padding-right: 10px;
+}
+
+.meta span {
+    display: inline-block;
+    border-radius: 32px;
+    width: 50px;
+    border: 1px solid;
+    border-color: orange;
+    border-left: none;
+    text-align: center;
+    background-color: orange;
+    padding: 20px 2px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+    /* ---------------SUMMARY----------------- */
+
+.section-summary {
+    line-height: 40px;
+    text-align: justify;
+    padding: 0 100px 70px 100px;
+}    
+
+.section-summary h2 {
+    color: rgb(0,0,0);
+    font-size: 42px;
+    font-weight: bold;
+    padding: 70px;
+}
+
+.section-summary p {
+    color: rgb(132,132,132);
+    font-size: 18px;
+}
+
+.add span {
+    font-style: italic;
+}
+
+    /* ---------------SUMMARY BEIGAS----------------- */
+
+    /* -----------------CAST & CREW------------------- */
+.section-cast {
+    height: 100vh;
+    min-height: 680px;
+    background-image: url("../images/car.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-cast .bg-overlay {
+    background-color: rgb(14, 2, 35, 0.8);
+}
+
+.section-cast h4 {
+    padding-top: 10px;
+    color:white;
+}
+
+
+.section-cast ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 80px;
+}
+
+.section-cast img {
+    height: 50vh;
+}
+
+.section-cast li {
+    position: relative;
+}
+
+.section-cast a {
+    text-decoration: none;
+    color: white;
+}
+
+.cast-head {
+    position: absolute;
+    top: 8px;
+    left:16px;
+    background-color: rgba( 242, 213, 26, 0.8);
+    padding: 6px 10px;
+}
+
+.cast-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 17%;
+    background-color: rgba(255,255,255, 0.8);
+    text-align: center;
+}
+
+.cast-text h5 {
+    font-size: 18px;
+    color: rgba(42,42,42,1);
+    padding-top: 25px;
+}
+
+.cast-text p {
+    font-size: 14px;
+    color: rgba(132,132,132,1);
+}
+
+.section-cast li:hover .cast-text, .section-cast li:hover .cast-head {
+    background-color: rgba( 242, 213, 26, 1);
+}
+
+    /* -------------CAST & CREW BEIGAS---------------- */
+
+    /* ------------------TRAILER------------------ */
+.section-trailer {
+    height: 100vh;
+    min-height: 950px;
+}
+
+.section-trailer h2 {
+    font-size: 42px;
+    font-weight: bold;
+    padding: 70px 0;
+}
+
+.section-trailer iframe {
+    height: 700px;
+    width: 1250px;
+}
+
+.section-trailer>ul {
+    display: grid;
+    grid-template-columns: 1250px 200px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section-trailer>ul img {
+    padding-bottom: 20px;
+}
+
+.section-trailer>ul:last-child li:last-child ul:last-child li:last-child {
+    padding-top: 150px;
+}
+
+.section-trailer>ul:last-child li:last-child ul:last-child li:last-child a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 18px;
+}
+
+    
+    /* -------------TRAILER BEIGAS---------------- */
+
+
+    /* ------------------TICKET------------------ */
+
+.section-tickets {
+    background-image: url("../images/cinema.png");
+    height: 330px;
+}
+
+.section-tickets .bg-overlay {
+    background-color: rgb(14, 2, 35, 0.5);
+    height: 100%;
+}
+
+.section-tickets h4 {
+    color: white;
+    font-weight: bold;
+    font-size:24px;
+    padding: 10px 0 30px 0;
+}
+
+.section-tickets a {
+    text-decoration: none;
+}
+
+    
+    
+        /* -------------TRAILER BEIGAS---------------- */
+    
+
